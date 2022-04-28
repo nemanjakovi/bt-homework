@@ -11,10 +11,10 @@
         $courses = $_GET["courses"];
 
         if (
-            empty($name) &&  empty($lastName)
-            && empty($gender) &&  empty($email)
-            && empty($password) &&  empty($retypePassword)
-            &&  empty($gender) && empty($courses)
+            empty($name) ||  empty($lastName)
+            || empty($gender) ||  empty($email)
+            || empty($password) ||  empty($retypePassword)
+            ||  empty($gender) || empty($courses)
         ) {
             header("Location:register.html?You must fill all fildes");
             exit();

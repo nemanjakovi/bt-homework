@@ -1,0 +1,49 @@
+main{
+    display: flex;
+    justify-content: center;
+}
+fieldset{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 500px;
+}
+
+label{ 
+    margin-bottom: 5px;
+}
+
+input{
+    margin-bottom: 10px;
+    width: 200px;
+    height: 20px;
+}
+
+#male{
+   margin-left: 23px; 
+}
+
+#php{
+    margin-left: 41px;
+}
+
+#html{
+    margin-left: 20px;
+}
+
+#css{
+    margin-left: 41px;
+}
+
+button{
+    border-radius: 7px;
+    color: white;
+    padding: 5px;
+    background-color: green;
+    width: 70px;
+    height: 30px;
+    margin: 5PX;
+}
+
+#reset{
+    background-color: red;
+}

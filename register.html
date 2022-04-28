@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+ 
+    <title>Registration</title>
+</head> 
+
+<body>
+  
+   <main>
+   <form action="register.php" method="GET">
+       <fieldset>
+           <legend>Registration form</legend>
+
+<label for="name">Name:</label>
+<input type="text" name="name" id="name" placeholder="Enter your name"> 
+
+<label for="last-name">Last name:</label>
+<input type="text" name="last_name" id="last_name" placeholder="Enter your last-name">
+<br>
+<label>Gender:</label>
+<label for="male">MALE
+<input type="radio" name="gender" id="male" value="male">
+</label>
+<label for="female">FEMALE
+<input type="radio" name="gender" id="female" value="female">
+</label>
+
+<label for="email">Email:</label>
+<input type="email" name="email" id="email" placeholder="Enter your email">
+
+<label for="password">Password:</label>
+<input type="password" name="password" id="password" placeholder="Enter your password">
+ 
+<label for="r-password">Retype password:</label>
+<input type="password" name="r_password" id="r-password" placeholder="Retype password">
+
+<label for="course">Course:</label>
+
+<div class="courses">
+<label for="php">PHP</label>
+<input type="checkbox" name="courses[]" id="php" value="php">         
+</div>
+<div class="clases">
+<label for="javascript">JavaScript</label>   
+<input type="checkbox" name="courses[]" id="javascript" value="javascript">
+</div>
+<div class="clases">
+<label for="html">HTMLt</label>
+<input type="checkbox" name="courses[]" id="html" value="html">
+</div>
+<div class="clases">
+<label for="css"> CSS</label>
+<input type="checkbox" name="courses[]" id="css"value="css"> 
+</div>
+
+<div class="buttons">
+<button type="submit"  name="submit" >Submit</button>
+<button type="reset" name="reset" id="reset" value="Reset">Rset</button>
+</div>
+       </fieldset>
+   </form>
+</main>
+</body>
+</html>

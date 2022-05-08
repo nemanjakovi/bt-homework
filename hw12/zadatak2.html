@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        background-color: grey;
+    }
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    border: 10px solid black;
+    background-color: grey;
+    padding: 10px;
+    width: 600px;
+    height: 400px;
+}
+
+label{
+    font-size: 20px;
+}
+
+input{
+    width: 400px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+button{
+    width: 400px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+</style>
+
+    <title>Kalkulator plocica</title>
+</head>
+<body>
+
+    <form action="zadatak2.php" method="POST" target="submit-area">
+
+                      <h2>Kalkulator pločica</h2>
+
+        <label for="visina-zida">Visina Zida</label>    
+        <input type="float" id="visina-zida" name="visina_zida" placeholder="cm">
+
+        <label for="sirina-zida">Širina Zida</label>
+        <input type="float" id="sirina-zida" name="sirina_zida" placeholder="cm"><br>
+
+        <label for="visina-plocice">Visina Pločice</label>
+        <input type="float" id="visina-plocice" name="visina_plocice" placeholder="cm">
+
+        <label for="sirina-plocice">Širina Pločice</label>
+        <input type="float" id="sirina-plocice" name="sirina_plocice" placeholder="cm"> <br> 
+
+        <button type="submit" name="submit" id="submit-area">Izračunaj</button><br> <br>
+    
+    </form>
+    
+</body>
+</html>

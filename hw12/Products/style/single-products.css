@@ -1,0 +1,382 @@
+*{
+    box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+  }
+  body{
+      max-height: 700px;
+    background-color: #d7370f; 
+}
+
+  .container{
+      margin: auto;
+      max-width: 167vh;
+      max-height: 200rem;
+      display: grid;
+      row-gap: 1rem;
+      grid-template-areas: 
+      "header "
+      "main "
+      "description "
+      "related-products ";
+  }
+
+    header{
+        grid-area: header;
+    }
+
+    main{
+        grid-area: main;
+    }
+ 
+    .description{
+        grid-area: description;
+    }
+
+    .relative-products{
+        grid-area: related-products;
+    }
+
+        /* header start */
+
+  header{
+    position: sticky;
+    opacity: 80%;
+    background-color: #842811;
+    display: grid;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 100%;
+    height: 5rem;
+    border-radius: 1rem;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    color: black;
+}
+
+header ul li {
+    list-style: none;
+    
+}
+
+header ul li a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: black;
+}
+
+header ul li a:active{ 
+    cursor: pointer;                            /*Pseudo klasa 1*/
+    color:white;
+}
+                                        /* header end */
+
+        /* main start */
+main{
+    background-color: bisque;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 168vh;
+    border-radius: 0.8rem;
+}
+
+main .main-card{
+    display: flex;  
+}
+
+main .single-product-picture{
+    border-radius: 0.8rem;
+    width:31.25rem;
+    margin-right: 3.75rem;
+}
+
+
+
+.title-button-price{
+    display: flex;
+    flex-direction: column;
+    margin-left: 8rem;
+}
+
+main h3 {
+    font-size: 2.5rem;
+}
+
+div .button-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 12rem;
+    margin-top: 3.125rem;
+}    
+
+div .button-price p{
+    font-size: 2rem;
+}
+
+div .price-spam {
+    justify-self: center;
+    font-size: 2rem;
+}
+
+ button.card-button{
+    background-color: #d7370f;
+    color: #dfd6d6;
+    border-radius: 10px;
+    height: 3.125rem;
+    width: 18rem;
+    font-size: 1.3rem;
+}
+
+                                         /* main end   */
+
+            /* description start */
+
+div.description {
+    margin-bottom: 1.9rem;
+    padding: 5px;
+    border-radius: 1rem;
+    background-color: #842811;
+    color: #dfd6d6;
+}
+div.description p{
+    font-size: 1.2rem;
+}
+                            /* description end */
+
+
+/* relative-products  */
+
+div.related-products{
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 10px;
+    padding: 1.2rem;
+    height: 18rem;
+    border-radius: 10px;
+    border: 2px solid #dfd6d6;
+}
+
+div.single-related-product{
+    height: 15rem;
+}
+div.single-related-product a{
+    text-decoration: none;
+}
+
+div.single-related-product a h3 {
+    margin: 3px;
+    font-size: 1.3rem;
+    color: black;
+}
+button.related-card-button{
+    height: 2rem;
+    width:  5rem;
+    background-color: #d7370f;
+    color: #dfd6d6;
+    border-radius: 5px;
+}
+
+div.single-related-product .price-p{
+    font-size: 1.2rem;
+}
+
+
+  img{
+      width: 12.5rem;
+  }
+
+
+                                          /* max-width:1190px */
+
+  @media(max-width:1190px){
+
+  .container{
+      width: 140vh;
+      row-gap: 0.9rem;
+  }
+      
+  header{
+    width: 140vh;
+   
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 140vh;
+}
+   
+main .single-product-picture{
+    border-radius: 0.8rem;
+    width:20.25rem;
+    margin-right: 56px;
+}
+
+main h3 {
+    font-size: 2.1rem;
+}                  
+  }
+
+
+                                            /* max-width:992px */
+  @media(max-width:992px){
+
+    .container{
+        width: 120vh;
+        row-gap: 0.7rem;
+    }
+
+   div.related-products{
+       display: flex;
+       justify-content: space-between;
+   }
+
+    .single-related-product-none{
+        display: none;
+    }
+ 
+        
+    header{
+      width: 120vh;
+     
+  }
+
+ 
+  
+  main{
+      width: 120vh;
+  }
+  }
+
+                                                /* max-width:576px */
+
+  @media(max-width:576px){
+      body{
+          max-width: 576px;
+      }
+    .container{
+        max-width: 576px;
+        row-gap: 0.2rem;
+        grid-template-areas: 
+        "header "
+        "main "
+        "description "
+        "relative-products";
+    
+    }
+      header{
+          grid-area: header;
+      }
+  
+      main{
+          grid-area: main;
+      }
+   
+      .description{
+          grid-area: description;
+      }
+  
+      div.related-products{
+          grid-area: relative-products;
+      }
+  
+          /* header start */
+  
+    header{
+      max-width: 32rem;
+      height: 5rem;
+      border-radius: 1rem;
+  }
+
+  header ul li a{
+      font-size: 1.2rem;
+  }
+ 
+  
+  header ul li a:active{ 
+      cursor: pointer;                            /*Pseudo klasa 1*/
+      color:white;
+  }
+                                    
+  main{
+      max-width: 32rem;
+      border-radius: 0.8rem;
+  }
+  
+  main .main-card{
+      display: flex;
+      max-width:  32rem;
+  }
+  
+  main .single-product-picture{
+      border-radius: 0.8rem;
+      width:18rem;
+      margin-right: 3rem;
+  }
+  
+  
+  
+  .title-button-price{
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-left: 1rem;
+  }
+  
+  main h3 {
+      font-size: 1.4rem;
+  }
+  
+  div .button-price{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 6rem;
+      margin-top: 3rem;
+  }    
+  
+  div .button-price p{
+      font-size: 1.2rem;
+  }
+  
+  div .price-spam {
+    font-size: 1rem;
+}
+  
+   button.card-button{
+      border-radius: 10px;
+      height: 2rem;
+      width: 6rem;
+      font-size: 0.7rem;
+  }
+  
+                                          
+  
+  div.description {
+      max-width: 32rem;
+      margin-left: 1.9rem;
+      margin-top: 1rem;
+      margin-bottom: 1.9rem;
+      padding: 5px;
+      border-radius: 1rem;
+      background-color: #842811;
+      color: #dfd6d6;
+  }
+  div.description p{
+      font-size: 1.2rem;
+  }
+  div.related-products{
+      margin: auto;
+    width: 32rem;
+    margin-bottom: 10px;
+  }
+  div.single-related-product-none1{
+      display: none;
+  }
+
+  }

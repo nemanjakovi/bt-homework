@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+  }
+  
+  body{
+       background-color: #d7370f; 
+       
+  }
+
+  header{
+      position: fixed;
+      padding-top: 10px;
+      max-width: 168vh;
+      max-height: 6.25rem;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      margin-top: 0.625rem;
+      border-radius: 1rem;
+      background-color: #842811;
+      opacity: 85%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .hamburger{
+    display: none;
+}
+
+  header ul{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  
+  header ul li {
+      height: 3.4rem;
+      padding: 3px;
+      font-size: 1.8rem;
+      text-align: center;
+      margin: 10px;
+      display: inline-block;
+      list-style-type: none;
+  }
+  
+  header ul li a{
+      text-decoration: none;
+      color: black;
+  }
+  
+  
+  header ul li a:active{ 
+      cursor: pointer;                            /*Pseudo klasa 1*/
+      color:white;
+  }
+  
+  
+  .container{
+    padding: 3px;
+    max-width: 168vh;
+    max-height: 80vh;
+    margin:  7px auto;    
+    margin-top: 110px;
+    margin-bottom: 50px;
+    display: grid;
+    justify-content: center;
+}
+
+
+    /* forma */
+
+  form{
+      display: grid;
+      gap: 25px;
+      margin-bottom: 5rem;
+
+  }
+
+  form h1{
+      justify-self: center;
+  }
+
+  input, textarea, button {
+      width: 31rem;
+      height: 3rem;
+      border-radius: 5px;
+  }
+  button {
+    background-color: #842811;
+    color: white;
+    border: 0;
+    
+  }
+
+  button:hover{
+      background-color: #cd664c;
+  }
+
+
+  
+      /* footer   */
+  
+  footer{
+      position: absolute;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      bottom: 0; 
+      left: 0;
+      right: 0;
+      border-radius: 1rem;
+      align-items: flex-end;
+      font-size: 1.25rem;
+      margin:  auto;
+      max-width: 169vh;  
+      height: 10rem;
+      color: white;
+      background-color: #842811;
+  } 
+   
+   div ul li, h4{
+       align-self: flex-start;
+       margin: 15px;
+        margin-left: 50px;
+        margin-right: 50px;
+       font-size: 11px;
+   }
+
+    a {
+       color: white;
+       text-decoration: none;
+    }
+   
+
+@media(max-width:992px){
+    header ul li a{
+        font-size: 1.4rem;
+}
+
+    h4{
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media(max-width:576px){
+
+    header ul li a{
+        font-size: 1.1rem;
+    }
+
+
+    .container{
+        margin-top: 110px;
+    }
+    h4{
+        font-size: 1rem;
+    }
+
+    footer{
+        background-color: #cd664c;
+        height: 200px;
+    }
+
+    div ul li, h4{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    /* .footer-ul{
+        height: 14.5remx;
+    } */
+}
+ 

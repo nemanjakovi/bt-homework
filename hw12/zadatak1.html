@@ -1,0 +1,89 @@
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: rgb(121, 94, 60);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    background-color: bisque;
+    border: 1px solid black;
+}
+
+input,select, button{
+    margin: 5px;
+}
+
+input{
+    width: 200px;
+    height: 20px;
+}   
+select{
+    width: 200px;
+    height: 30px;
+}
+
+button{
+    width: 200px;
+    height: 30px;
+}
+
+        </style>
+
+     <title>Calorie Calculator</title>
+ </head>
+ <body>
+        
+    <form action="zadatak1.php" method="POST">
+        <h1>Calorie Calculator</h1>
+
+        <label for="weight">Enter your weight</label>
+        <input type="float" id="weight" name= "weight">
+
+ <label for="activities">What is your activity</label>
+    <select name="activities" id="activities">
+        <option value="none1">Choose activity</option>
+        <option value="developer">Developer</option>
+        <option value="administrative_operator">Administrative Operator</option>
+        <option value="manager">Manager</option>
+        <option value="police_officer">Police Officer</option>
+        <option value="soldier">Soldier</option>
+        <option value="athlete">Athlete</option>
+        <option value="other">Other</option>
+    </select>
+
+ <label for="ages">Select the age range</label>
+    <select name="ages" id="ages">
+        <option value="none2">Select your ages</option>
+        <option value="0_3">0-3</option>
+        <option value="4_10">4-10</option>
+        <option value="11_18">11-18</option>
+        <option value="19_26">19-26</option>
+        <option value="27_30">27-30</option>
+        <option value="31_35">31-35</option>
+        <option value="36_44">36-44</option>
+        <option value="45_49">45-49</option>
+        <option value="50_60">50-60</option>
+        <option value="61_66">61-66</option>
+    </select> <br>
+
+    <button type="submit" name="submit">SUBMIT</button>
+    </form>
+     
+ </body>
+ </html>
